@@ -22,3 +22,6 @@ class Book:
         if not title_string:
             raise ValueError("Title cannot be empty")
         self._title = title_string
+
+    def __str__(self) -> str:
+        return f"Title = {self.title}. Author = {self.author}."

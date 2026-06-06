@@ -1,4 +1,5 @@
 from myapp.ui.user_messages import  user_options
+from myapp.utils.book_utils import instantiate_book
 
 def main():
     print("Hello, welcome to Litmanager!")
@@ -9,7 +10,7 @@ def main():
         user_choice = input("Your choice: ")
         match user_choice:
             case "1":
-                print("Test 1")
+                instantiate_book()
             case "2":
                 print("Test 2")
             case "3":
